@@ -21,7 +21,7 @@ function App() {
   }, [query])
 
   const getCurrentCity = async () => {
-    const response = await fetch(`https://ipinfo.io/49.37.161.111?token=80b750c90b559e`)
+    const response = await fetch(`https://ipinfo.io?token=80b750c90b559e`)
     const data = await response.json()
     console.log(data.city)
     getWeather(data.city)
